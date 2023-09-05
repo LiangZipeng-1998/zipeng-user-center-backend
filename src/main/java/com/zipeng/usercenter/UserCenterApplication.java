@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("com.zipeng.usercenter.mapper")
-public class ZipengUserCenterBackendApplication {
+public class UserCenterApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ZipengUserCenterBackendApplication.class, args);
+        SpringApplication.run(UserCenterApplication.class, args);
     }
 
 }
