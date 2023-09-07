@@ -1,6 +1,6 @@
 package com.zipeng.usercenter.service.impl;
 
-import com.zipeng.usercenter.model.User;
+import com.zipeng.usercenter.model.domain.User;
 import com.zipeng.usercenter.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;

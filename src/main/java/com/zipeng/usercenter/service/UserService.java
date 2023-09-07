@@ -1,7 +1,9 @@
 package com.zipeng.usercenter.service;
 
-import com.zipeng.usercenter.model.User;
+import com.zipeng.usercenter.model.domain.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 用户服务
@@ -22,4 +24,21 @@ public interface UserService extends IService<User> {
      */
     long userRegister(String userAccount, String userPassword, String checkPassword);
 
+    /**
+     * 用户登陆
+     *
+     * @param userAccount  用户账号
+     * @param userPassword 用户密码
+     * @param request
+     * @return 脱敏后的用户信息
+     */
+    User userLogin(String userAccount, String userPassword, HttpServletRequest request);
+
+    /**
+     * 用户脱敏
+     *
+     * @param originUser
+     * @return
+     */
+    User getSafetyUser(User originUser);
 }
