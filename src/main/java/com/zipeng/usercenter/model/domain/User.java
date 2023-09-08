@@ -32,7 +32,7 @@ public class User implements Serializable {
     /**
      * 用户头像
      */
-    private String acatarUrl;
+    private String avatarUrl;
 
     /**
      * 性别
@@ -72,7 +72,6 @@ public class User implements Serializable {
     /**
      * 是否删除
      */
-    @TableLogic
     private Integer isDelete;
 
     /**

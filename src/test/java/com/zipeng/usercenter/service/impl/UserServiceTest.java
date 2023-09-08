@@ -19,7 +19,7 @@ class UserServiceTest {
         User user = new User();
         user.setUsername("dogYupi");
         user.setUserAccount("123");
-        user.setAcatarUrl("https://img1.baidu.com/it/u=1645832847,2375824523&fm=253&fmt=auto&app=138&f=JPEG?w=480&h=480");
+        user.setAvatarUrl("https://img1.baidu.com/it/u=1645832847,2375824523&fm=253&fmt=auto&app=138&f=JPEG?w=480&h=480");
         user.setGender(0);
         user.setUserPassword("xxx");
         user.setEmail("123");
